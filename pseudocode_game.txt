@@ -1,0 +1,57 @@
+Link JSBIN "Create Your Own JavaScript App" : http://jsbin.com/fobiqa/141/edit?js,console
+
+// PSEUDOCODE
+SIMPAN nama hari pada array 'namaHari'
+SIMPAN nama bulan pada array 'namaBulan'
+TENTUKAN 'hargaJual' sama dengan 0
+SIMPAN kalimat "Selamat datang di BOTOT!" pada 'welcome'
+SIMPAN kalimat "Saya adalah tukang botot pada sesi ini.\nMasukkan barang bekas anda dan kumpulkan poinnya." pada 'teks1'
+
+FUNCTION dengan parameter 'nama' dan 'umur' pada 'TukangBotot'
+   SIMPAN parameter-parameter pada property dengan nama yang sama
+   SIMPAN method hello tanpa menerima parameter
+      TAMPILKAN property-property pada alert
+   ENDMETHOD
+ENDFUNCTION
+
+INSTANSIASI function TukangBotot menjadi objek menggunakan sintaks new ('Tono', 44) pada 'kurir'
+FUNCTION tanpa parameter pada 'pembuka'
+   TAMPILKAN method hello pada variabel 'kurir' yang telah diinstansiasi
+ENDFUNCTION
+
+FUNCTION tanpa parameter pada 'show_hari'
+   INSTANSIASI Date menggunakan sintaks new pada 'sekarang'
+   SIMPAN nama hari sekarang dengan menggunakan fungsi getDay pada 'hariIni'
+   SIMPAN nama bulan sekarang dengan menggunakan fungsi getMonth pada 'bulanIni'
+   SIMPAN tanggal sekarang dengan menggunakan fungsi getDate pada 'tglSekarang'
+   SIMPAN tahun sekarang dengan menggunakan fungsi getFullYear pada 'tahunIni'
+   TAMPILKAN variabel 'hariIni', 'bulanIni', 'tglSekarang', dan 'tahunIni'
+ENDFUNCTION
+
+TENTUKAN 'total' sama dengan 0
+TENTUKAN 'i' sama dengan 0
+SIMPAN jenis botot pada array 'jenisBotot'
+SIMPAN step pada array 'step'
+SIMPAN fungsi Math.random dimulai dari 30 sampai 70 pada pointRand
+
+FUNCTION dengan parameter 'string' pada 'jenisBrg'
+   SIMPAN parameter pada property dengan nama yang sama
+   SIMPAN method type dengan parameter 'randomValue'
+      FOR setiap pertambahan 1 pada `index1` dari 1 sampai panjang array 'step':
+         FOR setiap pertambahan 1 pada `index2` dari 0 panjang array 'jenisBotot':
+            IF `this.property` tidak sama dengan jenisBotot pada index2:
+               TAMPILKAN step pada index1 diikuti 'Botot anda tidak laku!'
+    	    ELSE:
+               TAMPILKAN 'Point botot' diikuti this.property dan parameter 'randomValue'
+	       SIMPAN total ditambah randomValue pada variabel total
+            ENDIF
+         ENDFOR
+      ENDFOR
+      TAMPILKAN 'Total point Anda :' diikuti variabel total
+   ENDMETHOD
+ENDFUNCTION
+
+INSTANSIASI function jenisBrg menjadi objek menggunakan sintaks new ('besi') pada 'cek'
+PANGGIL fungsi pembuka
+PANGGIL fungsi show_hari
+TAMPILKAN method type pada variabel 'cek' yang telah diinstansiasi
